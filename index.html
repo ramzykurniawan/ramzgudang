@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Space Runner Javascript</title>
+	<style>
+		#canvas{
+			border: 1px solid #000;
+			width: 960px;
+			height: 600px;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas">Your browser not support.</canvas>
+	<script>
+		window.onload = init();
+		
+		function init(){
+			canvas = document.getElementById('canvas');
+			cw = canvas.width = 960;
+			ch = canvas.height = 600;
+			pen = canvas.getContext('2d');
+
+			pen.beginPath();
+			pen.rect(10,10,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'lightgreen';
+			pen.rect(10,10,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'red';
+			pen.rect(cw - 110,490,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'black';
+			pen.rect(850,10,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'blue';
+			pen.rect(10,490,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'pink';
+			pen.rect(cw/2 - 50, ch/2 - 50,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'yellow';
+			pen.rect(10, ch/2 - 50,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'purple';
+			pen.rect(cw/2 - 50,10,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'magenta';
+			pen.rect(850,ch/2 - 50,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'brown';
+			pen.rect(cw/2 - 50,ch - 110,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'orange';
+			pen.rect(cw/4 - (50/2),ch/4 - (50/2),100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'lightblue';
+			pen.rect(cw/2 + cw/4 - 75 + (100/4), ch/4 - (50/2),100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'lightgreen';
+			pen.rect(220,370,100,100);
+			pen.fill();
+		}
+		// console.log('Javascript Active');
+	</script>
+</body>
+</html>
